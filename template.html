@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>aktuelle Mondphase</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            background-color: #111;
+            color: #fff;
+        }
+        .icon {
+            font-size: 5em;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>aktuelle Mondphase</h1>
+        <p><strong>Phase:</strong> {{.Phase}}</p>
+        <p><strong>Helligkeit:</strong> {{ printf "%.1f" .Illumination }}% </p>
+    </div>
+</body>    
+</html>
+

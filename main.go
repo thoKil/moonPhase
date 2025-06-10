@@ -32,10 +32,10 @@ func main() {
 	http.HandleFunc("/", htmlHandler)
 	port := os.Getenv("Port")
 	if port == "" {
-		port = "8080"
+		port = "8081"
 	}
 	log.Printf("Der Mondphasen-Kalender läuft auf http://localhost:%s", port)
-	//Starts webserver on port 8080
+	//Starts webserver on port 8081
 	http.ListenAndServe(":"+port, nil)
 }
 
