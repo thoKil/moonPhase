@@ -2,28 +2,15 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>aktuelle Mondphase</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            margin-top: 60px;
-            background-color: #111;
-            color: #fff;
-        }
-        .icon {
-            font-size: 5em;
-        }
-        .container {
-            padding: 20px;
-        }
-    </style>
+    <title>aktuelle Mondphase in Solingen</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>aktuelle Mondphase</h1>
+        <h1>aktuelle Mondphase in Solingen</h1>
+        <img src="{{.Image}}" alt="Mondphase">
         <p><strong>Phase:</strong> {{.Phase}}</p>
-        <p><strong>Helligkeit:</strong> {{ printf "%.1f" .Illumination }}% </p>
+        <p><strong>Helligkeit:</strong> {{ printf "%.1d" .Illumination }}% </p>
     </div>
 </body>    
 </html>
