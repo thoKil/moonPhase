@@ -11,6 +11,8 @@
 * go run main.go
 * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 *
+* Images from: https://www.flaticon.com/free-icons/moon-phase
+*
 * author: thokil
 * last update: 12.06.2025
 ******************************************************************/

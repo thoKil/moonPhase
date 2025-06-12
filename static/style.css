@@ -15,18 +15,18 @@ body {
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     padding: 40px;
     text-align: center;
-    max-width: 500px;
+    max-width: 800px;
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 4em;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
     object-fit: contain;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -34,7 +34,7 @@ img {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin: 12px 0;
 }
 
