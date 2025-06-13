@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: moonapp
+  labels:
+    app: moonapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: moonapp
+  template:
+    metadata:
+      labels:
+        app: moonapp
+    spec:
+      containers:
+        - name: moonapp
+          image: thokil/moonapp:latest
+          ports:
+            - containerPort: 8082
