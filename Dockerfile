@@ -1,7 +1,8 @@
-FROM golang:1.22 AS build
+FROM golang:1.24.3 AS build
 
 WORKDIR /app
 COPY . .
+ENV CGO_ENABLED=0
 RUN go build -o moonapp .
 
 FROM debian:bullseye-slim
