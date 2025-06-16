@@ -7,6 +7,6 @@ spec:
     app: moonapp
   ports:
     - protocol: TCP
-      port: 8082
+      port: 8083
       targetPort: 8082
   type: LoadBalancer
