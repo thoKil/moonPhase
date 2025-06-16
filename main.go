@@ -41,10 +41,10 @@ func main() {
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	// export PORT=8081 (or another port)
+	// export PORT=8082 (or another port)
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8081"
+		port = "8082"
 	}
 	log.Printf("The moon-phase-App runs on http://localhost:%s", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
@@ -97,7 +97,8 @@ func getMoonPhase(date string) (MoonPhase, error) {
 	// export API_KEY=33902b95ee204b5eb31165429251106
 	// go run main.go
 
-	apiKey := os.Getenv("API_KEY")
+	//apiKey := os.Getenv("API_KEY")
+	apiKey := "33902b95ee204b5eb31165429251106"
 	if apiKey == "" {
 		return MoonPhase{}, fmt.Errorf("Api Key not set")
 	}
